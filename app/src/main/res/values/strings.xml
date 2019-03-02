@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Old Irish Pub</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="Drinks_array">
+        <item>Fadøl</item>
+        <item>Flaskeøl</item>
+        <item>Drinks</item>
+        <item>Shots</item>
+        <item>Cider</item>
+    </string-array>
+</resources>
