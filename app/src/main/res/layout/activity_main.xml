@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="733dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/background"
         android:text="Old Irish"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,6 +24,7 @@
 
     <Button
         android:id="@+id/drinks"
+        style="@style/Button"
         android:layout_width="168dp"
         android:layout_height="59dp"
         android:backgroundTintMode="add"
@@ -32,10 +36,11 @@
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <Button
         android:id="@+id/test"
+        style="@style/Button"
         android:layout_width="0dp"
         android:layout_height="59dp"
         android:layout_marginTop="24dp"
@@ -48,6 +53,7 @@
 
     <Button
         android:id="@+id/about"
+        style="@style/Button"
         android:layout_width="168dp"
         android:layout_height="59dp"
         android:layout_marginTop="16dp"
@@ -63,6 +69,7 @@
 
     <Button
         android:id="@+id/contact"
+        style="@style/Button"
         android:layout_width="168dp"
         android:layout_height="59dp"
         android:layout_marginTop="16dp"
@@ -75,6 +82,7 @@
 
     <Button
         android:id="@+id/maps"
+        style="@style/Button"
         android:layout_width="168dp"
         android:layout_height="59dp"
         android:backgroundTintMode="add"
@@ -85,4 +93,29 @@
         app:layout_constraintStart_toEndOf="@+id/drinks"
         app:layout_constraintTop_toTopOf="@+id/drinks" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/test"
+        app:layout_constraintEnd_toEndOf="@+id/maps"
+        app:layout_constraintStart_toStartOf="@+id/drinks"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.120000005"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
 </android.support.constraint.ConstraintLayout>
+
+<android.support.design.widget.NavigationView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:menu="@menu/navigation_menu"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/nav_header"
+    android:id="@+id/nv">
+
+</android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Old Irish Pub</string>
     <string name="title_activity_maps">Map</string>
+    <string name="Open">NavBar</string>
+    <string name="Close">NavBar</string>
     <string-array name="Drinks_array">
         <item>Fadøl</item>
         <item>Flaskeøl</item>
