@@ -19,6 +19,11 @@ android {
 }
 
 dependencies {
+    implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
+    annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomVersion"
+    androidTestImplementation "android.arch.persistence.room:testing:$rootProject.roomVersion"
+    implementation "android.arch.lifecycle:extensions:$rootProject.archLifecycleVersion"
+    annotationProcessor "android.arch.lifecycle.compiler:$rootProject.archLifecycleVersion"
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'

@@ -1,6 +1,7 @@
 package com.example.mybar;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Drinks.class);
         startActivity(i);
     }
-
+    public void event (View v) {
+        Intent i = new Intent(this, Event.class);
+        startActivity(i);
+    }
 }
 

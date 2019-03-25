@@ -39,13 +39,14 @@
         app:layout_constraintVertical_bias="0.7" />
 
     <Button
-        android:id="@+id/test"
+        android:id="@+id/event"
         style="@style/Button"
         android:layout_width="0dp"
         android:layout_height="59dp"
         android:layout_marginTop="24dp"
         android:backgroundTintMode="add"
-        android:text="Test"
+        android:onClick="event"
+        android:text="Event"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/contact"
         app:layout_constraintStart_toStartOf="@+id/about"
@@ -101,7 +102,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/test"
+        app:layout_constraintBottom_toTopOf="@+id/event"
         app:layout_constraintEnd_toEndOf="@+id/maps"
         app:layout_constraintStart_toStartOf="@+id/drinks"
         app:layout_constraintTop_toTopOf="@+id/textView2"
