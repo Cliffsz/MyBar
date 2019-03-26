@@ -33,5 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Event.class);
         startActivity(i);
     }
+    public void songs (View v) {
+        Intent i = new Intent (this, TopThreeSongs.class );
+        startActivity(i);
+    }
 }
 
